@@ -18,6 +18,7 @@
     "prettier": "^2.8.7"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.9.0",
     "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/strapi": "4.9.0",
