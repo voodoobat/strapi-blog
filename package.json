@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",
+    "cp-cli": "^2.0.0",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
