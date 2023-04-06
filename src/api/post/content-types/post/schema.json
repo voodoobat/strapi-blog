@@ -16,6 +16,9 @@
       "type": "string",
       "required": true
     },
+    "slug": {
+      "type": "string"
+    },
     "content": {
       "type": "text",
       "required": true

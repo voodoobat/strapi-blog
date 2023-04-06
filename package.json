@@ -26,6 +26,9 @@
     "@strapi/strapi": "4.9.0",
     "better-sqlite3": "8.0.1"
   },
+  "imports": {
+    "#src/*": "./src/*"
+  },
   "author": {
     "name": "A Strapi developer"
   },
