@@ -13,12 +13,9 @@ module.exports = createCoreController(uid, {
   async create(ctx) {
     const { data } = ctx.request.body
     const input = await this.sanitizeInput(data, ctx)
-    input.user = ctx.state.user // add current user into post data
 
-    // generate slug from title
-    if (!input.slug) {
-      input.slug = slugify(input.title)
-    }
+    input.user = ctx.state.user // add current user into post data
+    input.slug = input.slug ? slugify(input.slug) : slugify(input.title) // generate slug from title if slug is not isset
 
     const entity = await strapi.entityService.create(uid, { data: input })
     const output = await this.sanitizeOutput(entity, ctx)
